@@ -55,7 +55,7 @@ function CitiesProvider({ children }) {
       } catch (err) {
         dispatch({
           type: "error",
-          payload: "Something went wrong with fetching cities.",
+          payload: "Something went wrong with fetching cities!",
         });
       }
     }
