@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 
-const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://worldwisere.netlify.app/data/cities.json";
 const CitiesContext = createContext();
 
 const initialState = {
@@ -41,7 +41,7 @@ function reducer(state, action) {
 function CitiesProvider({ children }) {
   const [{ cities, isLoading, currentCity }, dispatch] = useReducer(
     reducer,
-    initialState
+    initialState,
   );
 
   useEffect(function () {
