@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 
-const BASE_URL = "https://worldwisere.netlify.app/data/cities.json";
+const BASE_URL = "https://6988b881780e8375a689014f.mockapi.io/";
 const CitiesContext = createContext();
 
 const initialState = {
